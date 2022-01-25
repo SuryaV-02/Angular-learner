@@ -1,5 +1,42 @@
 <body>
    <div class="d-flex justify-content-center">
-    <h1>surya works!</h1>
+      <h1>Age of {{name}} is {{age}}</h1>
+   </div>
+   <br>
+   <div class="container">
+      <h4>Ng For using dict of directives</h4>
+      <tr *ngFor='let c of cricketers let i=index'>
+         <td>{{i+1}}</td>
+         <td>{{c.name}}</td>
+         <td>{{c.ODI}}</td>
+         <td>{{c.Test}}</td>
+      </tr>
+   </div>
+   <br>
+   <div class="container">
+      <h4>Ng If for eligibility using GOT</h4>
+      <p *ngIf="age>18">You are ready for GOT</p>
+   </div>
+   <br>
+   <div class="container">
+      <h4>ngSwitch for eligibility for GOT</h4>
+      <div [ngSwitch]="age">
+         <p *ngSwitchCase="10">paapa</p>
+         <p *ngSwitchCase="20">You are eligible..</p>
+         <p *ngSwitchDefault>No Age</p>
+      </div>
+   </div>
+   <br>
+   <div class="container" [ngStyle]="{'color':cname,'font-weight':fweight,'border':bstyle}">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque beatae sed veritatis</p>
+   </div>
+   <br>
+   <div [ngClass]="[container_type]">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vel, inventore et ea ullam sequi assumenda omnis esse ducimus aut vitae animi beatae, error modi sed architecto, quod sunt soluta.</p>
+   </div>
+   <br>
+   <div class="container">
+      <p>The {{name}} birthday is {{ birthday | date:"fullDate" }} </p>
+      <p>{{age | currency:'INR'}}</p>
    </div>
 </body>
