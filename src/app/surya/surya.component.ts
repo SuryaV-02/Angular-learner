@@ -11,12 +11,20 @@ export class SuryaComponent implements OnInit {
   }
   // should not placed inside ngOnInit()!!
   name = 'Surya';
+  
   age = 20;
+
   cname = "red";
+  
   fweight = "italic";
+
   bstyle = "10px solid green";
+
   birthday = new Date(2002, 0, 26);
+
   container_type = 'btn btn-primary'
+  container_text_class = 'text-white'
+
   cricketers = [{
     name: 'Saurav Ganguly',
     ODI: "21",
@@ -26,4 +34,5 @@ export class SuryaComponent implements OnInit {
     ODI: "21",
     Test: "17"
   },];
+
 }
