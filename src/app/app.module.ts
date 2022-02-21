@@ -8,6 +8,7 @@ import { SummaComponent } from './summa/summa.component';
 import { PhantomComponent } from './phantom/phantom.component';
 
 import { FormsModule } from '@angular/forms';
+import { TwoWayBindingCompComponent } from './two-way-binding-comp/two-way-binding-comp.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     SuryaComponent,
     SummaComponent,
     theRoutingPathway,
-    PhantomComponent
+    PhantomComponent,
+    TwoWayBindingCompComponent
   ],
   imports: [
     BrowserModule,

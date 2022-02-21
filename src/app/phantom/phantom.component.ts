@@ -28,4 +28,6 @@ export class PhantomComponent implements OnInit {
     }
   }
 
+  fullName: string = "Hello JavaTpoint"; 
+
 }
